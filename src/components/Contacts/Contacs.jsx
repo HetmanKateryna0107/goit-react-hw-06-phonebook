@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redax/contactSlice';
 import { selectContacts, selectFilter } from 'redax/selectors';
@@ -29,8 +28,4 @@ export const Contacts = () => {
       ))}
     </ul>
   );
-};
-Contacts.propTypes = {
-  visibleContacts: PropTypes.array,
-  handelDelete: PropTypes.func,
 };

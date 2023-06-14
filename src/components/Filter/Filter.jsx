@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { addFilter } from 'redax/filterSlice';
 export const Filter = () => {
@@ -10,8 +9,4 @@ export const Filter = () => {
       placeholder="filter contact"
     />
   );
-};
-Filter.propTypes = {
-  handleFilter: PropTypes.func,
-  filter: PropTypes.string,
 };

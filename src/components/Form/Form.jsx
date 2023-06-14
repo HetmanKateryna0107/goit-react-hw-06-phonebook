@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from 'redax/selectors';
 import { addContact } from 'redax/contactSlice';
@@ -62,8 +62,3 @@ export default function Form() {
     </form>
   );
 }
-
-Form.propTypes = {
-  name: PropTypes.string,
-  value: PropTypes.string,
-};
